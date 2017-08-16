@@ -146,3 +146,6 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migratio
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.addNameToMembershipType.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypeWithNames.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingBirthdayToCustomer.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingBirthdayToCustomer1.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateJohnSmithBirthday.resources
