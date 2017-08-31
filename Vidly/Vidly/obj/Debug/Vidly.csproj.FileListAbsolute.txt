@@ -154,3 +154,5 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migratio
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreToTable.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovieTable.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.RemoveRequiredFromFieldsInMovieTable.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.DeleteGenreRequired.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedGenreId3rdTime.resources
