@@ -21,7 +21,7 @@ namespace Vidly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         //this represents the customer table in the database//do same for movies
-        public DbSet<Customer> Cutomers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<Movie> Movies{ get; set; }
         public DbSet<MembershipType> MembershipTypes { get; set; }
         public DbSet<Genre> Genres { get; set; }
