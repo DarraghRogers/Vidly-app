@@ -27,21 +27,34 @@ namespace Vidly.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
-            return View("CustomerForm", viewModel);
+            return View("New", viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
+            if (!ModelState.IsValid)
+            {
+                var membershipTypes = _context.MembershipTypes.ToList();
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = membershipTypes
+                };
+
+                return View("New", viewModel);
+            }
             if (customer.Id == 0)
             {
-                _context.Cutomers.Add(customer);
+                _context.Customers.Add(customer);
             }
             else
             {
-                var customerInDb = _context.Cutomers.Single(c => c.Id == customer.Id);
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
                 customerInDb.Name = customer.Name;
                 customerInDb.Birthday = customer.Birthday;
                 customerInDb.MemberShipTypeId = customer.MemberShipTypeId;
@@ -56,7 +69,7 @@ namespace Vidly.Controllers
 
         public ActionResult Edit(int id)
         {
-            var customer = _context.Cutomers.SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
             {
@@ -74,13 +87,13 @@ namespace Vidly.Controllers
         // GET: Customers
         public ViewResult Index()
         {
-            var customers = _context.Cutomers.Include(c => c.MemberShipType).ToList();
+            var customers = _context.Customers.Include(c => c.MemberShipType).ToList();
             return View(customers);
         }
 
         public ActionResult Details(int id)
         {
-            var customer = _context.Cutomers.Include(c => c.MemberShipType)
+            var customer = _context.Customers.Include(c => c.MemberShipType)
                         .SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
