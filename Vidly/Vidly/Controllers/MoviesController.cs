@@ -4,7 +4,6 @@ using System.Data.Entity;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
-using Vidly.Migrations;
 using System;
 
 namespace Vidly.Controllers
@@ -26,18 +25,31 @@ namespace Vidly.Controllers
             var movies = _context.Movies.Include(m => m.Genre).ToList();
             return View(movies);
         }
-        public ActionResult New()
+        public ViewResult New()
         {
             var genres = _context.Genres.ToList();
             var viewModel = new MovieFormViewModel
             {
+                
                 Genres = genres
             };
             return View("NewMovieForm", viewModel);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+               
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    
+                    Genres = _context.Genres.ToList()
+                };
+                return View("NewMovieForm", viewModel);
+            }
+
             if (movie.Id == 0)
             {
                 movie.DateAdded = DateTime.Now;
@@ -64,9 +76,9 @@ namespace Vidly.Controllers
                 return HttpNotFound();
             }
 
-            var viewModel = new MovieFormViewModel
+            var viewModel = new MovieFormViewModel(movie)
             {
-                Movie = movie,
+                
                 Genres = _context.Genres.ToList()
             };
 
