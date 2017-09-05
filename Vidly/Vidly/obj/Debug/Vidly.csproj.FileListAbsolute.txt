@@ -156,3 +156,12 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migratio
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.RemoveRequiredFromFieldsInMovieTable.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.DeleteGenreRequired.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedGenreId3rdTime.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\AutoMapper.xml
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.DeletingNullGenreIdRows.resources
