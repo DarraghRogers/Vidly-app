@@ -165,3 +165,7 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Net.Http.Form
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.xml
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.DeletingNullGenreIdRows.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsersRetry.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangePhoneNumberToPhoneAndAString.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangePhoneFromChartoString.resources

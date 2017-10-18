@@ -20,10 +20,18 @@ namespace Vidly.Controllers
         {
             _context.Dispose();
         }
+
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ViewResult Index()
         {
+            if (User.IsInRole(RoleName.CanManageMovies))
+            {
+                return View("Index");
+            }else
+            {
+                return View("ReadOnlyList");
+            }
             
-            return View();
         }
         public ViewResult New()
         {
