@@ -169,3 +169,8 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migratio
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangePhoneNumberToPhoneAndAString.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangePhoneFromChartoString.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.Ado.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.AspNet.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.Core.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.Mvc5.dll

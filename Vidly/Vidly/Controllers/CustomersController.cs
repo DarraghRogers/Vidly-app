@@ -86,7 +86,17 @@ namespace Vidly.Controllers
         }
         // GET: Customers
         public ViewResult Index()
-        { 
+        {
+            //This code is used for cacheing data
+            //you need to add a reference of System.Runtime.Caching 
+            //only use this after performance profiling
+            //if (MemoryCache.Default["Genere"] == null)
+            //{
+            //    MemoryCache.Default["Genere"] = _context.Genres.ToList();
+            //}
+
+            //var genere = MemoryCache.Default["Genere"] as IEnumerable<Genre>;
+
             return View();
         }
 
