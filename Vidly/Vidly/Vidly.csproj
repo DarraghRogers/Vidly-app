@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44332</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -53,6 +53,18 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -149,17 +161,8 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Owin.Host.SystemWeb">
       <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook">
-      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Cookies">
       <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
@@ -271,6 +274,22 @@
     <Compile Include="Migrations\201709052211478_DeletingNullGenreIdRows.Designer.cs">
       <DependentUpon>201709052211478_DeletingNullGenreIdRows.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710122103335_SeedUsersRetry.cs" />
+    <Compile Include="Migrations\201710122103335_SeedUsersRetry.Designer.cs">
+      <DependentUpon>201710122103335_SeedUsersRetry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710122140474_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\201710122140474_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>201710122140474_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710122232500_ChangePhoneNumberToPhoneAndAString.cs" />
+    <Compile Include="Migrations\201710122232500_ChangePhoneNumberToPhoneAndAString.Designer.cs">
+      <DependentUpon>201710122232500_ChangePhoneNumberToPhoneAndAString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710161501180_ChangePhoneFromChartoString.cs" />
+    <Compile Include="Migrations\201710161501180_ChangePhoneFromChartoString.Designer.cs">
+      <DependentUpon>201710161501180_ChangePhoneFromChartoString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -280,6 +299,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
@@ -526,6 +546,7 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\New.cshtml" />
     <Content Include="Views\Movies\NewMovieForm.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -593,6 +614,18 @@
     <EmbeddedResource Include="Migrations\201709052211478_DeletingNullGenreIdRows.resx">
       <DependentUpon>201709052211478_DeletingNullGenreIdRows.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710122103335_SeedUsersRetry.resx">
+      <DependentUpon>201710122103335_SeedUsersRetry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710122140474_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>201710122140474_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710122232500_ChangePhoneNumberToPhoneAndAString.resx">
+      <DependentUpon>201710122232500_ChangePhoneNumberToPhoneAndAString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710161501180_ChangePhoneFromChartoString.resx">
+      <DependentUpon>201710161501180_ChangePhoneFromChartoString.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -612,7 +645,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62477</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62477/</IISUrl>
+          <IISUrl>https://localhost:44332/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
