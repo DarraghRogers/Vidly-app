@@ -174,3 +174,5 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.AspNet.dll
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.Core.dll
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.EF6.dll
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Glimpse.Mvc5.dll
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedRentalsToDOM.resources
+C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedNumberAvailablePropertyToMovie.resources

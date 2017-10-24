@@ -468,7 +468,10 @@
     <Content Include="Content\DataTables\css\common.scss" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+<<<<<<< HEAD
     <None Include="Properties\PublishProfiles\ExampleHostSiteProfile.pubxml" />
+=======
+>>>>>>> origin/master
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
