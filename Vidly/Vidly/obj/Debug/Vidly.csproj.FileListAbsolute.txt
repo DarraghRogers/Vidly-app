@@ -135,7 +135,6 @@ C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Microsoft.Owin.Secur
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
 C:\Users\Darragh\Documents\GitHub\Vidly-app\Vidly\Vidly\obj\Debug\Vidly.dll
